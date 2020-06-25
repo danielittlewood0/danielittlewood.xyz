@@ -14,3 +14,6 @@ taken to make the site accessible later.
 To test the site locally, `python -m http.server 8000` will serve it on
 `localhost:8000`. But you can change the language if python isn't your
 favourite.
+
+Most commits are tagged as either `[Content]` or `[Development]`, indicating
+whether they purely change the static content, or the build process.
