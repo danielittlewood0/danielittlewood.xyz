@@ -1,5 +1,4 @@
-This is the source code for [https://www.danielittlewood.xyz](my personal
-site), it is intended first and foremost to be *simple*. So, at least at the
+This is the source code for [my personal site](https://www.danielittlewood.xyz), it is intended first and foremost to be *simple*. So, at least at the
 time of writing, it is intended only for serving static content - no
 frameworks, no javascript.
 
