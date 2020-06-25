@@ -10,3 +10,7 @@ HTML, but have not done so yet.
 A major advantage of keeping the site simple is *accessibility*, which I think
 is a core concept of web design. I will add more detail about what steps I've
 taken to make the site accessible later.
+
+To test the site locally, `python -m http.server 8000` will serve it on
+`localhost:8000`. But you can change the language if python isn't your
+favourite.
