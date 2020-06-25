@@ -1,1 +1,1 @@
-cp -r ./src/* ./build
+cp -r ./src/* ./public
