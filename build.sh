@@ -1,1 +1,1 @@
-cp -r ./src/* ./public
+rsync -rtv --delete ./src/ ./public/
