@@ -6,17 +6,73 @@
 
   <body>
     <nav>
-      <a href="/free_software/index.html">Free Software</a>
-      <a href="/notes/index.html">Notes</a>
+      <a href="#notes">Notes</a>
+      <a href="#free-software">Free Software</a>
     </nav>
 
-    <header>
-      <h1> Daniel Littlewood - Personal Site </h1>
-    </header>
-
     <main>
-      <p> Welcome! This is my corner of the internet, which I use to keep track of
-      and maintain various resources that I want to use in multiple places. </p>
+      <header>
+        <h1> Daniel Littlewood </h1>
+        <p>
+          Welcome to my site - I am <a href="https://www.gentoo.org/">Gentoo
+          Linux</a> enthusiast, and a patron of the <a
+          href="https://www.fsf.org/">Free Software Foundation</a>, so expect
+          to find content of that nature.
+        </p>
+      </header>
+
+      <section id="notes">
+        <header>
+          <h2> Notes </h2>
+          <p>
+            I often have problems configuring my system, and if the problem is not
+            easily solved then I tend to write notes to myself about how to fix it.
+            If I put them here, then (selfishly) I can access them easily in
+            multiple places, and (selflessly) other people in similar situations
+            might benefit from reading the things I tried.
+          </p>
+
+          <p>
+            I usually write the notes themselves in 
+            <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>,
+            and then post-process them into HTML.
+          </p>
+        </header>
+
+        <main>
+          <details>
+            <summary> Keyboard Settings under X </summary>
+            <p>
+              In a modern desktop environment, there are usually designated
+              tools to manage things like the keyboard. This post explains how
+              to do it by hand, on a system running X.
+            </p>
+          </details>
+        </main>
+      </section>
+
+      <section id="free-software">
+        <header>
+          <h2> Free Software </h2>
+          <p> 
+            This covers anything to do with Free software which I either think
+            is worth publicising, that I use personally and patch, or that I have
+            written and maintain myself. 
+
+            I also plan to keep my <emph>dotfiles</emph> (configuration files
+            for various packages) indexed here.
+          </p>
+        </header>
+
+        <main>
+          <details>
+            <summary> tmux </summary>
+            <p>
+              tmux is a popular terminal multiplexer.
+            </p>
+          </details>
+        </main>
+      </section>
     </main>
   </body>
 </html>

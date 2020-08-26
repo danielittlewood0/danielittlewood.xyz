@@ -1,9 +1,14 @@
+html {
+  background-color: #ffffff;
+}
+
 body {
-  font-family: Georgia, serif;
-  background-color: #f4f2f5;
+  font-family: Georgia, sans-serif;
   width: 80%;
+  height: 100vh;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,4 +23,9 @@ a, a:link, a:visited, a:active, a:hover {
 
 a:hover {
   text-decoration: underline;
+}
+
+nav * {
+  display: inline-block;
+  width: 20%;
 }
