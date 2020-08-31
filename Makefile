@@ -1,7 +1,8 @@
 # -*- MakeFile -*-
 PAGES_SRC = $(wildcard src/*.html)
 STYLE_SRC = $(wildcard src/*.css)
-COPY_SRC  = $(PAGES_SRC) $(STYLE_SRC)
+FAVICON   = src/d.png
+COPY_SRC  = $(PAGES_SRC) $(STYLE_SRC) $(FAVICON)
 COPY_TAR  = $(COPY_SRC:src/%=public/%)
 
 NOTES_SRC = $(wildcard src/notes/*.md)
