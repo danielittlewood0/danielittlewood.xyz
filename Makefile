@@ -14,7 +14,7 @@ all: $(NOTES_TAR) $(COPY_TAR)
 
 public/%.html: src/%.md
 	mkdir -p public/notes
-	pandoc -o $@ $< 
+	pandoc -so $@ $<
 
 public/%: src/%
 	cp $< $@
