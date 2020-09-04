@@ -1,3 +1,6 @@
+---
+title:  'Keyboard Settings'
+---
 I recently found out that my keyboard is wrong in Gentoo.
 
 The keyboard settings are in `/etc/conf.d/keymaps` for openrc, which is me.

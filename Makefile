@@ -14,7 +14,7 @@ all: $(NOTES_TAR) $(COPY_TAR)
 
 public/%.html: src/%.md
 	mkdir -p public/notes
-	pandoc -so $@ $<
+	pandoc -V lang=en -M author="Daniel Littlewood" -V css="/main.css" -so $@ $<
 
 public/%: src/%
 	cp $< $@
