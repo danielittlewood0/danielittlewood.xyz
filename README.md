@@ -34,3 +34,10 @@ python -m http.server 8000 --directory=public
 
 will serve it on `localhost:8000`. But you can change the language if
 python isn't your favourite.
+
+## Upload
+
+The upload script is very transparent: It uses
+[rsync](https://linux.die.net/man/1/rsync) to send the build files over SSH.
+Rsync is a really useful tool to know about, as it powerfully generalises both
+cp and scp to cases where some files already exist at the copy destincation.
