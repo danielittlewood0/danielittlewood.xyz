@@ -2,8 +2,7 @@ Header set Content-Security-Policy "default-src 'self'"
 Header set X-Frame-Options DENY
 Header set X-Content-Type-Options nosniff
 Header set Referrer-Policy no-referrer
-Header set Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; layout-animations 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; oversized-images 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-get 'none'; sync-xhr 'none'; usb 'none'; vr 'none'; wake-lock 'none'; xr-spatial-tracking 'none';"
-
-RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://danielittlewood.xyz/$1 [R,L]
+Header set Permissions-Policy "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), layout-animations=(), legacy-image-formats=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), oversized-images=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), sync-xhr=(), usb=(), vr=(), wake-lock=(), xr-spatial-tracking=(),"
+# For the difference between "set" and "always set", see: https://stackoverflow.com/questions/39502968/apache-difference-between-header-always-set-and-header-set
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header set Expect-CT "enforce, max-age=86400"
