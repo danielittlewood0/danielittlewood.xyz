@@ -2,7 +2,8 @@
 PAGES_SRC = $(wildcard src/*.html)
 STYLE_SRC = $(wildcard src/*.css)
 FAVICON   = src/d.png
-COPY_SRC  = $(PAGES_SRC) $(STYLE_SRC) $(FAVICON)
+HTACCESS  = src/.htaccess
+COPY_SRC  = $(PAGES_SRC) $(STYLE_SRC) $(FAVICON) $(HTACCESS)
 COPY_TAR  = $(COPY_SRC:src/%=public/%)
 
 NOTES_SRC = $(wildcard src/notes/*.md)
