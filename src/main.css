@@ -25,7 +25,11 @@ a:hover {
   text-decoration: underline;
 }
 
-nav * {
+#TOC li {
   display: inline-block;
-  width: 20%;
+}
+
+#TOC li + li:before {
+  content: '|';
+  padding-right: .3em;
 }

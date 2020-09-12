@@ -8,7 +8,7 @@ through to get this site into the state it's currently in.
 ## Server Space
 
 My server is maintained by
-(https://www.nearlyfreespeech.net/)[NearlyFreeSpeech]. They do "pay as you go"
+[NearlyFreeSpeech](https://www.nearlyfreespeech.net/). They do "pay as you go"
 hosting, meaning that each served request, email sent, or DB query, costs you a
 certain amount. This works well for me, since I'm sure that for a long time I'm
 going to have very minimal traffic. An advantage of NFS for me is that they're
@@ -33,7 +33,7 @@ remember why.
 
 ## HTTPS
 
-For inforamtion about getting a certificate for HTTPS, visit [Let's
+For information about getting a certificate for HTTPS, visit [Let's
 Encrypt](https://l.facebook.com/l.php?u=https%3A%2F%2Fletsencrypt.org%2F%3Ffbclid%3DIwAR03R7VdoXXgOs4xrm4-r41PE8Vmygy70bA6npx_TbStcV9dFu9_ub_Dsqw&h=AT22PVvjXqF3LrKpB_6iDHj6xrX8CNGpKM0a2I23MYS5eZwJqPeHKVV0uzndy4Y11j1fXFCjimrOWLIoZIW-L7yb-8YOxDHu5K2ot8_bL-Frv3oqgvnCnQE-q9fAKg).
 The usual situation is that they will give you a "challenge" file which you
 must put onto your server to prove you own it.
