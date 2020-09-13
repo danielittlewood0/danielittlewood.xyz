@@ -55,6 +55,15 @@ You can pay money to get even more privacy, for example [RespectMyPrivacy]
 details. This site isn't really anonymous (my name is all over it), so I'm not
 going to bother switching at this time.
 
+## Email Forwarding
+
+If you want to get in touch with me, the address `admin@danielittlewood.xyz` at
+the top of the page will be [forwarded to my personal
+email][NearlyFreeSpeech-email-forwarding]. I've done this to avoid getting
+inundated with spam, or by opportunistic robots trying to check which services
+I'm subscribed to. Gmail has a feature which lets you direct dummy accounts to
+a single inbox, but that ties you into their service (whereas I can use any
+private email provider I like with this setup).
 
 ## HTTPS
 
@@ -160,6 +169,7 @@ file. Check out [the source][site-github] to see how mine is set up.
 
 [NearlyFreeSpeech]: https://www.nearlyfreespeech.net/
 [NearlyFreeSpeech-faq]: https://www.nearlyfreespeech.net/about/faq
+[NearlyFreeSpeech-email-forwarding]: https://www.nearlyfreespeech.net/services/email
 [RespectMyPrivacy]: https://www.nearlyfreespeech.net/services/respect
 [GoDaddy]: https://www.godaddy.com/
 [Let's Encrypt]: https://letsencrypt.org/
