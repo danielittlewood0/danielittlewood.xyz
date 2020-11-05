@@ -1,5 +1,6 @@
 ---
 title:  'Keyboard Settings'
+date: '5/11/2020'
 ---
 
 The keyboard in Linux has separate settings when running under X and when not.
@@ -143,7 +144,7 @@ The required syntax is:
   key
 ```
 
-## Application: Broken volume keys
+## Application: Multimedia Keys
 
 My volume keys (Mute, Up, Down) do not work out of the box, so here is an
 example to fix them.
@@ -166,7 +167,11 @@ running, I get no response. Your window manager may be swallowing the keys
 instead. Unfortunately, you have to find out what application is responsible by
 yourself.
 
-Once you have identified the appropriate key, you need a shell command which will adjust the volume/brightness. For brightness, we can use the `xbrightness` tool:
+### Brightness
+
+Once you have identified the appropriate key, you need a shell command which
+will adjust the volume/brightness. For brightness, we can use the `xbrightness`
+tool:
 
 ```
 # $HOME/.xbindkeysrc
@@ -175,6 +180,8 @@ Once you have identified the appropriate key, you need a shell command which wil
 "xbacklight -dec 10"
   XF86MonBrightnessDown
 ```
+
+### Volume
 
 For volume, I have PulseAudio installed on my system so I use the tool `pactl`
 to adjust the volume. For the sinks (speakers), we have:
@@ -205,3 +212,24 @@ therefore be:
 "pactl set-source-mute alsa_input.pci-0000_00_1b.0.analog-stereo toggle"
   XF86AudioMicMute
 ```
+
+### Screenshots
+
+There is a very nice and simple program named [scrot][scrot] that takes
+screenshots. I am accustomed to the PrintScreen button taking a screenshot of
+the current window, and Shift+PrintScreen taking an "interactive" screenshot
+(where you draw a rectangle on the screen).
+
+The following setup will do exactly that, with screenshots being sent to your
+home directory by default. To send them to a special folder, check out `man
+scrot`.
+
+```
+# $HOME/.xbindkeysrc
+"scrot"
+  Print
+"scrot -s"
+  Shift+Print
+```
+
+[scrot]: https://github.com/resurrecting-open-source-projects/scrot
