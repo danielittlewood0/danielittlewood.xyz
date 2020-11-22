@@ -1,5 +1,5 @@
 ---
-title: "How I Built This"
+title: How I Built This
 date: 13 September 2020
 ---
 

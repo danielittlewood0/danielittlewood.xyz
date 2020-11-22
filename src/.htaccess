@@ -6,3 +6,14 @@ Header set Permissions-Policy "accelerometer=(), ambient-light-sensor=(), autopl
 # For the difference between "set" and "always set", see: https://stackoverflow.com/questions/39502968/apache-difference-between-header-always-set-and-header-set
 Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 Header set Expect-CT "enforce, max-age=86400"
+
+RewriteEngine On
+# For prettiness, remove .html from page names
+# Remove .html (or htm) from visible URL (permanent redirect)
+RewriteCond %{REQUEST_URI} ^/(.+)\.html?$ [nocase]
+RewriteRule ^ /%1 [L,R=301]
+
+# Quietly point back to the HTML file (temporary/undefined redirect):
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [END]

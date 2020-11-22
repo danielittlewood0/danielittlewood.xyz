@@ -1,6 +1,6 @@
 ---
-title:  'Keyboard Settings'
-date: '5/11/2020'
+title: Keyboard Settings under X
+date: 5 November 2020
 ---
 
 The keyboard in Linux has separate settings when running under X and when not.
