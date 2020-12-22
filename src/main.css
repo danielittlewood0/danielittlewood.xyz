@@ -33,3 +33,7 @@ a:hover {
   content: '|';
   padding-right: .3em;
 }
+
+pre {
+  overflow: auto;
+}
