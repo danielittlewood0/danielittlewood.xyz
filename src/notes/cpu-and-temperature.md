@@ -98,7 +98,7 @@ temp1:        +46.0°C
 temp1:        +46.0°C  (crit = +128.0°C)
 ```
 
-[intel-p-state-active-mode][https://www.kernel.org/doc/html/v4.12/admin-guide/pm/intel_pstate.html#active-mode]
-[cpu-frequency][https://www.kernel.org/doc/html/v4.12/admin-guide/pm/cpufreq.html]
-[intel-p-state][https://www.kernel.org/doc/html/v4.12/admin-guide/pm/intel_pstate.html]
-[arch-wiki-cpu-gov][https://wiki.archlinux.org/index.php/CPU_frequency_scaling#CPU_frequency_driver]
+[intel-p-state-active-mode]: https://www.kernel.org/doc/html/v4.12/admin-guide/pm/intel_pstate.html#active-mode
+[cpu-frequency]: https://www.kernel.org/doc/html/v4.12/admin-guide/pm/cpufreq.html
+[intel-p-state]: https://www.kernel.org/doc/html/v4.12/admin-guide/pm/intel_pstate.html
+[arch-wiki-cpu-gov]: https://wiki.archlinux.org/index.php/CPU_frequency_scaling#CPU_frequency_driver
