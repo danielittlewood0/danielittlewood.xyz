@@ -16,6 +16,26 @@ well documented][NearlyFreeSpeech-faq], and while you could in principle just
 use the FAQ and then go to any provider you like, I think it's only fair to
 reward them for this service.
 
+## HTTP Server
+
+This site is built with Apache in mind, but for portability I think that the
+dependence on HTTP server should be minimal and explicit. Currently,
+`.htaccess` (which is the only Apache-specific feature) is used to do two
+things:
+
+* Set various security headers (described below).
+* Remove the filetype suffix, to obtain prettier URLs.
+
+The site will function without these pieces of functionality. This is
+particularly important for local testing - if you want to run up the stack to
+check that some CSS change works as you expect, you don't have to have an
+Apache daemon running to serve it. You can instead use something lightweight
+like [http.server](https://docs.python.org/3/library/http.server.html).
+
+For links to work, it is important that all relative paths on the site point to
+*filenames* and not the pretty URLs. So you should link to
+`/notes/website-documentation.html`, and not `/notes/website-documentation`.
+
 ## Source Code
 
 The full source for this site, including the Markdown source for any of the
@@ -43,8 +63,7 @@ Registrant Organization:
 Registrant State/Province: London
 Registrant Country: GB
 Registrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
-Admin Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain
-name.
+Admin Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
 Tech Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
 Registrar Abuse Contact Email: abuse@godaddy.com
 Registrar Abuse Contact Phone: +1.4805058800
@@ -82,17 +101,17 @@ run `pandoc -D html`, and find examples in this site's source code in the
 Makefile, as well as in the notes directory.
 
 For pages that are just copied over, pandoc doesn't work because going to HTML
-and back is not a perfect conversion. I don't have a good solution for
-templating on these pages, but it's currently only the homepage, so I'm not that
-worried.
+and back through pandoc is not a perfect conversion. I don't have a good
+solution for templating on these pages, but it's currently only the homepage,
+so I'm not that worried.
 
 ## Security Headers
 
 Check out 
 [Security Headers][header-scan] to see if your site has appropriate headers
 set. There are a variety of ways to set them, and I think it's a property of
-your HTTP server. I don't think I have access to mine, so I use the `.htaccess`
-file. Check out [the source][site-github] to see how mine is set up.
+your HTTP server. Mine is Apache, so I configure it with `.htaccess`.
+Check out [the source][site-github] to see how mine is set up.
 
 
 * [Server][headers/server]: This header reveals the type of server your website
