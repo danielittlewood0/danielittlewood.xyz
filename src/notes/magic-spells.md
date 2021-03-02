@@ -45,7 +45,8 @@ rsync -aAXvP SRC DEST
 ## ffmpeg quick compression/conversion
 
 Raw recorded video is too big, and most compression snippets you find convert
-to patented formats with proprietary standards. I prefer:
+to [patented formats with proprietary standards](https://audio-video.gnu.org/docs/formatguide.html).
+I prefer:
 
 ```
 ffmpeg -i input.mkv -codec:v libtheora -qscale:v 7 -codec:a libvorbis -qscale:a 5 output.ogv
@@ -56,4 +57,5 @@ ffmpeg -i input.mkv -codec:v libtheora -qscale:v 7 -codec:a libvorbis -qscale:a 
 * `-codec:a libvorbis`: Use the free audio codec [Vorbis](https://xiph.org/vorbis/).
 * `-qscale:a 5`: Set the audio quality scale (0-10).
 
-[Source](https://trac.ffmpeg.org/wiki/TheoraVorbisEncodingGuide)
+[Source](https://trac.ffmpeg.org/wiki/TheoraVorbisEncodingGuide),
+[Similar](https://dev.to/benjaminblack/use-ffmpeg-to-compress-and-convert-videos-458l).
