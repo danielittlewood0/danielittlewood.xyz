@@ -5,9 +5,8 @@ html {
 body {
   font-family: Georgia, sans-serif;
   width: 80%;
-  height: 100vh;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 4vh auto;
   padding: 10px 20px;
 }
 
@@ -26,12 +25,28 @@ a:hover {
 }
 
 #TOC li {
-  display: inline-block;
+  list-style-type: none;
 }
 
-#TOC li + li:before {
-  content: '|';
-  padding-right: .3em;
+#TOC li {
+  list-style-type: disclosure-closed;
+}
+
+#TOC ul ul {
+  display:none;
+}
+
+#TOC li:hover ul {
+  display: block;
+}
+
+#TOC li:hover {
+  list-style-type: disclosure-open;
+  background-color: #f8f8f8;
+}
+
+#TOC li:hover li:hover {
+  background-color: #f2f2f2;
 }
 
 pre {
