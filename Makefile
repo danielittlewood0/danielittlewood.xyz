@@ -19,7 +19,12 @@ all: $(NOTES_TAR) $(COPY_TAR) $(SITEMAP)
 
 public/%.html: src/%.md
 	mkdir -p public/notes
-	pandoc -V lang=en -M author="admin@danielittlewood.xyz" -V css="/main.css" --toc -so $@ $<
+	pandoc \
+		--template="danielittlewood-template.html" \
+		-V lang=en \
+		-M author="admin@danielittlewood.xyz" \
+		-V css="/main.css" \
+		--toc -so $@ $<
 
 public/sitemap.xml: 
 	DOMAIN=$(DOMAIN) ./sitemap_generator.sh >| public/sitemap.xml
