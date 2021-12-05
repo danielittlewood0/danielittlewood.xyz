@@ -24,6 +24,7 @@ public/%.html: src/%.md
 		-V lang=en \
 		-M author="admin@danielittlewood.xyz" \
 		-V css="/main.css" \
+		-V favicon="/d.png" \
 		--toc -so $@ $<
 
 public/sitemap.xml: 
