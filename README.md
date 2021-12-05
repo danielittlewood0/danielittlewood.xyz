@@ -1,11 +1,8 @@
 This is the source code for [my personal
 site](https://www.danielittlewood.xyz), it is intended first and foremost to be
 *simple*. So, at least at the time of writing, it is intended only for serving
-static content - no frameworks, no javascript.
-
-A major advantage of keeping the site simple is *accessibility*, which I think
-is a core concept of web design. I will add more detail about what steps I've
-taken to make the site accessible later.
+static content - no frameworks, no javascript. A major advantage of keeping the
+site simple is accessibility. 
 
 Most commits are tagged as either `[Content]` or `[Development]`, indicating
 whether they purely change the static content, or the build process.
@@ -14,8 +11,7 @@ whether they purely change the static content, or the build process.
 
 The site is built using `make` from the following kinds of files:
 
-* HTML pages, which are copied verbatim from source.
-* Plain CSS stylesheets, also copied.
+* Plain CSS stylesheets, which are copied verbatim from source.
 * Notes written in Markdown, which are converted to HTML fragments using
   [app-text/pandoc](https://pandoc.org/).
 
@@ -39,5 +35,3 @@ python isn't your favourite.
 
 The upload script is very transparent: It uses
 [rsync](https://linux.die.net/man/1/rsync) to send the build files over SSH.
-Rsync is a really useful tool to know about, as it powerfully generalises both
-cp and scp to cases where some files already exist at the copy destincation.

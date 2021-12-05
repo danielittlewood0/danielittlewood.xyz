@@ -93,17 +93,25 @@ script which sets up TLS for you, and it is run automatically.
 
 ## Meta Tags and Templating
 
-For the pages I build with pandoc, certain meta tags which are similar over the
-whole site are built into pages automatically. This is done using pandoc's
-[templating feature][pandoc-templates]. There are several "ways in" to using
-pandoc templates to set metadata variables. To see their default HTML template,
-run `pandoc -D html`, and find examples in this site's source code in the
-Makefile, as well as in the notes directory.
+Site-wide meta tags are built into pages automatically. This is done using
+pandoc's [templating feature][pandoc-templates]. There are several "ways in" to
+using pandoc templates to set metadata variables. To see their default HTML
+template, run `pandoc -D html`, and find examples in this site's source code in
+the Makefile, as well as in the notes directory.
 
-For pages that are just copied over, pandoc doesn't work because going to HTML
-and back through pandoc is not a perfect conversion. I don't have a good
-solution for templating on these pages, but it's currently only the homepage,
-so I'm not that worried.
+Pandoc's [markdown-in-html-blocks] extension allows for convenient inclusion of
+html features not native to markdown. For example, you can use the HTML5
+`<details>` tag like so:
+
+```{.html.markdown}
+<details>
+<summary> This section contains [Markdown] syntax. </summary>
+## Examples
+You can use all the features of Markdown you like in here.
+</details>
+```
+
+See [the source][Source Code] for more examples.
 
 ## Security Headers
 
@@ -215,3 +223,5 @@ Check out [the source][site-github] to see how mine is set up.
 [headers/feature-policy]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
 [headers/strict-transport-security]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
 [headers/expect-ct]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect-CT
+
+[markdown-in-html-blocks]: https://pandoc.org/MANUAL.html#extension-markdown_in_html_blocks
