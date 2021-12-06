@@ -64,6 +64,23 @@ the changes I've made, plus an explanation of how they work, take a
 look at [my fork][my-st] on Github.
 </details>
 
+## Photos
+
+I like to travel, and I take pictures when I travel. Here are a few of them:
+
+[![Low Water, Coniston]](https://flic.kr/p/2mPdDz8){target="_blank"}
+[![Coniston Water]](https://flic.kr/p/2mPeRAg){target="_blank"}
+[![Hillside near Sawrey Knotts]](https://flic.kr/p/2mPajkQ){target="_blank"}
+[![Wheat field, Croesgoch]](https://flic.kr/p/2mPbBKQ){target="_blank"}
+[![Sunset, Croesgoch]](https://flic.kr/p/2mPeQTe){target="_blank"}
+
+You can find more on [my flickr][flickr].
+
+[low water, coniston]: https://live.staticflickr.com/65535/51730170949_b78b2e9687_c_d.jpg
+[coniston water]: https://live.staticflickr.com/65535/51730406495_117f5e5134_c_d.jpg
+[hillside near sawrey knotts]: https://live.staticflickr.com/65535/51729520926_4032b35279_c_d.jpg
+[wheat field, croesgoch]: https://live.staticflickr.com/65535/51729774618_20bee0f97e_c_d.jpg
+[sunset, croesgoch]: https://live.staticflickr.com/65535/51730404115_f719f7d075_c_d.jpg
 
 [gentoo]: https://www.gentoo.org
 [fsf]: https://www.fsf.org/
@@ -75,3 +92,4 @@ look at [my fork][my-st] on Github.
 [Magic Spells]: notes/magic-spells.html
 [Controlling CPU Frequency and Temperature in Gentoo]: notes/cpu-and-temperature.html
 [Keyboard Settings under X]: notes/keyboard.html
+[flickr]: https://www.flickr.com/photos/194548325@N07/?fbclid=IwAR3Fr3G5z98du4JbVvcEEAkW5z7N-ISFaMqF74FCpfRHeoCj2zjxT-Z2qEI

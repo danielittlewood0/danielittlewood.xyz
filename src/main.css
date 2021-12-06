@@ -59,3 +59,7 @@ a:hover {
 pre {
   overflow: auto;
 }
+
+img {
+  width: 100%;
+}
