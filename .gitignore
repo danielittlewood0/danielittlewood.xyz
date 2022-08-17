@@ -1,2 +1,5 @@
 public/*
 !public/.keep
+
+filters/*
+!filters/*.hs

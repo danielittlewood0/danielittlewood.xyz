@@ -6,6 +6,7 @@ Welcome to my site - I like [Gentoo Linux][gentoo] and [Free
 Software][fsf], so expect content about that.
 
 ## Notes
+
 I often have problems configuring my system, and if the problem is not
 easily solved then I tend to write notes to myself about how to fix it.
 If I put them here, then (selfishly) I can access them easily in
@@ -16,34 +17,41 @@ I usually write the notes themselves in [Markdown] and then
 post-process them into HTML using [pandoc].
 
 
-<details>
-<summary> [How does this site work?] </summary>
+::: details
+[How does this site work?] 
+
 Setting up a website is more complicated than I expected, so I compiled
 some pointers together in case someone else wants to copy what
 I've done.
-</details>
+:::
 
-<details>
-<summary> [Magic Spells] </summary>
+::: details
+[Magic Spells] 
+
 A cheat-sheet for long commands with many options that I don't
 like searching the internet or reading the manual to find over
 and over.
-</details>
+:::
 
-<details>
-<summary> [ Controlling CPU Frequency and Temperature in Gentoo ] </summary>
+
+::: details
+[Controlling CPU Frequency and Temperature in Gentoo] 
+
 When I switched to Gentoo, my laptop was warmer than I expected
 during normal use. It turned out that my CPU was running at max
 frequency all the time, which was making it consume more power
 (and hence warm up).
-</details>
+:::
 
-<details>
-<summary> [ Keyboard Settings under X ] </summary>
+
+::: details
+[Keyboard Settings under X] 
+
 Explanation of how to remap keys, assign scripts to certain key
 combinations, and fix broken multimedia keys on a system running
 X.
-</details>
+:::
+
 
 
 ## Free Software
