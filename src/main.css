@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6, #TOC, details summary {
   font-family: Tahoma, sans-serif;
 }
 
+details summary * {
+  display: inline;
+}
+
 a, a:link, a:visited, a:active, a:hover {
   color: #0066cc;
   font-weight: 700;
